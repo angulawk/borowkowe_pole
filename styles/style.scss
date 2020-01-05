@@ -1,0 +1,12 @@
+@import "vars";
+@import "reset";
+@import "layout";
+@import "mixins";
+
+//sections
+@import "sections/nav";
+@import "sections/main";
+@import "sections/about";
+@import "sections/price-list";
+@import "sections/gallery";
+@import "sections/contact";

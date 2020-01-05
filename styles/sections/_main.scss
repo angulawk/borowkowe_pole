@@ -1,0 +1,16 @@
+.main_section {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(97,123,227,.7);
+
+  .jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+  }
+}

@@ -1,0 +1,81 @@
+#gallery {
+  @include white-section;
+}
+
+@mixin galleryItem() {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+  grid-gap: 15px 10px;
+  justify-content: center;
+
+  @media (min-width: 480px) {
+    grid-template-columns: 60%;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+    grid-gap: 15px 10px;
+
+  } 
+
+  @media (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 480px 480px 480px 480px;
+    grid-gap: 15px 10px;
+  } 
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 480px 480px 480px 25%;
+    grid-gap: 15px 10px;
+  }
+
+  .gallery_item_1 {
+    @include galleryItem;
+    background-image: url("../images/1.jpg");
+  }
+
+  .gallery_item_2 {
+    @include galleryItem;
+    background-image: url("../images/3.jpg");
+  }
+
+  .gallery_item_3 {
+    @include galleryItem;
+    background-image: url("../images/2.jpg");
+  }
+  
+  .gallery_item_4 {
+    @include galleryItem;
+    background-image: url("../images/4.jpg");
+  }
+
+  .gallery_item_5 {
+    @include galleryItem;
+    background-image: url("../images/5.jpg");
+  }
+
+  .gallery_item_6 {
+    @include galleryItem;
+    background-image: url("../images/6.jpg");
+  }
+
+  .gallery_item_7 {
+    @include galleryItem;
+    background-image: url("../images/7.jpg");
+  }
+
+  .gallery_item_8 {
+    @include galleryItem;
+    background-image: url("../images/8.jpg");
+  }
+
+  .gallery_item_9 {
+    @include galleryItem;
+    background-image: url("../images/9.jpg");
+  }
+}

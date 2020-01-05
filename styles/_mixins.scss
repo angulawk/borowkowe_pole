@@ -1,0 +1,16 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin blue-section {
+  background-color: $lightblue;
+  padding-bottom: 75px;
+}
+
+@mixin white-section {
+  color: $black;
+  padding-bottom: 75px;
+}

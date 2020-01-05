@@ -1,0 +1,90 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $lightgrey;
+}
+
+.container {
+	max-width: 1200px;
+  width: 100%;
+	margin: 0 auto;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+	}
+}
+
+h2 {
+	font-size: 4rem;
+	line-height: 4rem;
+	
+	@media(min-width: 768px) {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+	@media(min-width: 1440px) {
+		font-size: 6rem;
+		line-height: 6rem;	
+	}
+}
+
+h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2.8rem;
+	font-weight: 300;
+	line-height: 4rem;
+	text-transform: uppercase;
+	padding: 75px 0;
+	text-align: center;
+
+	@media(min-width: 480px) {
+		font-size: 3rem;
+		line-height: 3rem;
+	} 
+
+	@media(min-width: 600px) {
+		font-size: 3.5rem;
+	}
+
+	@media(min-width: 768px) {
+		font-size: 4rem;
+	} 
+
+	@media(min-width: 900px) {
+		font-size: 4.5rem;
+		line-height: 5rem;
+	}
+
+	@media(min-width: 1024px) {
+		font-size: 5rem;
+	}
+
+	@media(min-width: 1440px) {
+		font-size: 5.5rem;
+		line-height: 5.5rem;	
+	}
+}
+
+h6 {
+	font-size: 1.5rem;
+	line-height: 4rem;
+
+	@media(min-width: 1024px) {
+		font-size: 2rem;
+	}
+}
+
+p {
+	line-height: 1.5rem;
+}

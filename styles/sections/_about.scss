@@ -1,0 +1,46 @@
+#about {
+  @include white-section;
+}
+
+.about_wrapper {
+  @include flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @media(min-width: 768px) {
+    flex-flow: row wrap;
+  }
+
+  @media(min-width: 1200px) {
+    justify-content: space-around;
+  }
+
+  .about_details {
+    @include flex;
+    flex-flow: column nowrap;
+    padding: 25px;
+    flex: 0 0 100%;
+    margin: 0 25px 25px;
+    color: $darkgrey;
+    text-align: center;
+
+    @media(min-width: 768px) {
+      flex: 0 0 45%;
+    }
+
+    @media(min-width: 1200px) {
+      flex: 0 0 25%;
+    }
+
+    img {
+      max-width: 64px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .about_title {
+    text-align: center;
+    color: $lightblue;
+  }
+}

@@ -1,0 +1,17 @@
+#contact {
+  @include blue-section;
+}
+
+.contact {
+  text-align: center;
+
+  .contact_data {
+    margin-bottom: 20px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+  }
+}
